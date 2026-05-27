@@ -1,4 +1,5 @@
 import { Router as WouterRouter, Switch, Route } from "wouter";
+import { Toaster } from "sonner";
 import Home from "@/pages/Home";
 
 function NotFound() {
@@ -20,8 +21,11 @@ function Router() {
 
 export default function App() {
   return (
-    <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-      <Router />
-    </WouterRouter>
+    <>
+      <Toaster theme="dark" position="bottom-right" />
+      <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+        <Router />
+      </WouterRouter>
+    </>
   );
 }

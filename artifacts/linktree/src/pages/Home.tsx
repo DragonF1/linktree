@@ -1,5 +1,6 @@
 import { profile, sections, modServers, lastUpdated } from "../data";
 import type { ModServer } from "../data";
+import { toast } from "sonner";
 
 function ServerIcon({ server }: { server: ModServer }) {
   if (server.iconUrl) {
@@ -145,9 +146,15 @@ export default function Home() {
                         />
                       )}
                       <a
-                        href={link.url}
-                        target={link.url.startsWith("mailto:") ? undefined : "_blank"}
+                        href={link.url || "#"}
+                        target={link.url && !link.url.startsWith("mailto:") ? "_blank" : undefined}
                         rel="noopener noreferrer"
+                        onClick={(e) => {
+                          if (!link.url) {
+                            e.preventDefault();
+                            toast("This is private");
+                          }
+                        }}
                         style={{
                           color: "var(--accent-link)",
                           textDecoration: "underline",

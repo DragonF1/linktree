@@ -1,11 +1,3 @@
-// ─────────────────────────────────────────────
-//  Edit this file to update your linktree.
-//  Each section has a heading and a list of links.
-//  Each link needs: label, url, and an optional description.
-//  Mod servers need: name, role, members, inviteUrl,
-//    iconColor (hex), optionally iconUrl and since.
-// ─────────────────────────────────────────────
-
 export interface LinkItem {
   label: string;
   url: string;
@@ -48,16 +40,15 @@ export const sections: Section[] = [
     links: [
       {
         label: "TexDex",
-        url: "https://discord.gg/",
+        url: "https://discord.gg/R8NhzF2JgT",
         icon: "https://cdn.discordapp.com/icons/878684571972009984/b34a8733a4c76fd14b43e2697fb845cf.webp?size=1024",
         description: "Minecraft texture pack creating & searching tool",
       },
       {
         label: "Aura",
-        url: "https://discord.gg/",
+        url: "https://discord.gg/jvPqweaeC2",
         icon: "https://cdn.discordapp.com/icons/1033792063591944232/705108d38c8a6462d559d07d125aae37.webp?size=1024",
-        description:
-          "Custom Hypixel proxy server for displaying statistics and QOL features",
+        description: "Custom Hypixel proxy server for displaying statistics and QOL features",
       },
     ],
   },
@@ -67,39 +58,56 @@ export const sections: Section[] = [
     links: [
       {
         label: "TexDex",
-        url: "https://discord.com/",
+        url: "https://discord.com/oauth2/authorize?client_id=1166499953749803059",
         icon: "https://cdn.discordapp.com/icons/878684571972009984/b34a8733a4c76fd14b43e2697fb845cf.webp?size=1024",
         description: "The main bot used for the TexDex server",
       },
       {
         label: "TexDex AI",
-        url: "https://discord.com/",
+        url: "",
         icon: "https://cdn.discordapp.com/icons/878684571972009984/b34a8733a4c76fd14b43e2697fb845cf.webp?size=1024",
         description: "Used for finding texture packs using AI",
       },
       {
         label: "TexDex Support",
-        url: "https://discord.com/",
+        url: "",
         icon: "https://cdn.discordapp.com/icons/878684571972009984/b34a8733a4c76fd14b43e2697fb845cf.webp?size=1024",
         description: "Used for supporting TexDex powered by AI",
       },
       {
         label: "HyClash",
-        url: "https://discord.com/",
+        url: "",
         icon: "https://cdn.discordapp.com/icons/1440126767166656578/e34fe696e983fd4d5cb8f3bbe803adc3.webp?size=1024",
         description: "The main bot used in the HyClash server",
       },
       {
         label: "Swuab's Optimizations",
-        url: "https://discord.com/",
+        url: "",
         icon: "https://cdn.discordapp.com/icons/1288325153289408634/cebe666340db8847fae13b1febefb2f4.webp?size=1024",
         description: "The main bot used in Swuab's Optimizations server",
       },
       {
         label: "Trace",
-        url: "https://discord.com/",
+        url: "https://discord.com/oauth2/authorize?client_id=1465236186623639594",
         icon: "https://cdn.discordapp.com/attachments/1092081566655725650/1508742832813506632/T_Mono_NoBG.png?ex=6a16a5c2&is=6a155442&hm=b4c9e3a0fa492f818b555886dbeed5e94384129f559642deaec3be0c46ae0fc4&",
         description: "A Hytale username searching tool & tracker",
+      },
+    ],
+  },
+  {
+    id: "other",
+    heading: "Other",
+    links: [
+      {
+        label: "Aura Proxy",
+        url: "https://discord.gg/jvPqweaeC2",
+        icon: "https://cdn.discordapp.com/icons/1033792063591944232/705108d38c8a6462d559d07d125aae37.webp?size=1024",
+        description: "Custom Hypixel proxy server for displaying statistics and QOL features",
+      },
+      {
+        label: "Bedwars Custom Achivements Mod",
+        url: "",
+        description: "Adds custom achivements to Bedwars",
       },
     ],
   },
@@ -112,6 +120,12 @@ export const sections: Section[] = [
         url: "https://texdex.net",
         icon: "https://cdn.discordapp.com/icons/878684571972009984/b34a8733a4c76fd14b43e2697fb845cf.webp?size=1024",
         description: "The website for TexDex",
+      },
+      {
+        label: "Portfolio",
+        url: "",
+        icon: "",
+        description: "My portfolio",
       },
     ],
   },
