@@ -105,7 +105,7 @@ export const sections: Section[] = [
         description: "Custom Hypixel proxy server for displaying statistics and QOL features",
       },
       {
-        label: "Bedwars Custom Achivements Mod",
+        label: "Bedwars Achivements Mod",
         url: "",
         description: "Adds custom achivements to Bedwars",
       },
