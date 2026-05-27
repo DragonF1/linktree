@@ -136,13 +136,13 @@ export default function Home() {
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                   {section.links.map((link, i) => (
-                    <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                      <span style={{ color: "var(--accent-arrow)", flexShrink: 0, lineHeight: 1 }}>→</span>
+                    <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
+                      <span style={{ color: "var(--accent-arrow)", flexShrink: 0, lineHeight: "22px" }}>→</span>
                       {link.icon && (
                         <img
                           src={link.icon}
                           alt=""
-                          style={{ width: "16px", height: "16px", borderRadius: "3px", objectFit: "contain", flexShrink: 0 }}
+                          style={{ width: "16px", height: "16px", borderRadius: "3px", objectFit: "contain", flexShrink: 0, marginTop: "3px" }}
                         />
                       )}
                       <a
@@ -162,6 +162,7 @@ export default function Home() {
                           textUnderlineOffset: "3px",
                           transition: "color 0.15s, text-decoration-color 0.15s",
                           flexShrink: 0,
+                          lineHeight: "22px",
                         }}
                         onMouseEnter={(e) => {
                           const el = e.currentTarget as HTMLAnchorElement;
@@ -177,7 +178,7 @@ export default function Home() {
                         {link.label}
                       </a>
                       {link.description && (
-                        <span className="link-description" style={{ color: "var(--fg-dim)", fontSize: "13px" }}>// {link.description}</span>
+                        <span className="link-description" style={{ color: "var(--fg-dim)", fontSize: "13px", lineHeight: "22px" }}>// {link.description}</span>
                       )}
                     </div>
                   ))}

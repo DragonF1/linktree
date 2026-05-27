@@ -125,7 +125,7 @@ export const sections: Section[] = [
         label: "Portfolio",
         url: "",
         icon: "",
-        description: "My portfolio",
+        description: "My full portfolio, maybe i will add the link here one day",
       },
     ],
   },
